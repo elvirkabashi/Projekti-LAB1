@@ -13,7 +13,7 @@ export const ReturnBook = () => {
                                         alt="book"
                                     />
                                     <h6 className='mt-2'>Book</h6>
-                                    <p>Luv2Code</p>
+                                    <p>Love2Code</p>
                                     <a className='btn main-color text-white' href='#'>Reserve</a>
                                 </div>
           </div>
