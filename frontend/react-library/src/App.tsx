@@ -7,6 +7,7 @@ import { Carousel } from './layouts/HomePage/Carousel';
 import { Heros } from './layouts/HomePage/Heros';
 import { LibraryServices } from './layouts/HomePage/LibraryServices';
 import { Footer } from './layouts/NavbarAndFooter/Footer';
+import { SearchBooksPage } from './layouts/SearchBooksPage/SearchBooksPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Heros/>
       <LibraryServices/>
       <Footer/>
+      <SearchBooksPage/>
     </div>
   );
 }
