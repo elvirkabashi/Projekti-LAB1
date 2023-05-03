@@ -43,7 +43,7 @@ export const BookCheckoutPage = () => {
             setIsLoading(false);
             setHttpError(error.message);
         })
-    }, []);
+    }, [bookId]);
 
 
     if (isLoading) {

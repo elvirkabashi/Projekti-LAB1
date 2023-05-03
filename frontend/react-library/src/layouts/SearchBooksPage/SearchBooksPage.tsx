@@ -104,8 +104,8 @@ const categoryField=(value:string)=>{
 
     if(value.toLowerCase()==='fe'||
     value.toLowerCase()==='be'||
-    value.toLowerCase()=='data'||
-    value.toLowerCase()=='devops')
+    value.toLowerCase()==='data'||
+    value.toLowerCase()==='devops')
     {
         setCategorySelection(value);
         setSearchUrl(`/search/findByCategory?category=${value}&page=<pageNumber>&size=${booksPerPage}`)
