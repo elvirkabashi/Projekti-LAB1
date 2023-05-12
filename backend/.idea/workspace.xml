@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4a3c9cb-3146-414b-8dcc-c5cc70f67b35" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +70,9 @@
       <workItem from="1682971789818" duration="804000" />
       <workItem from="1683037254029" duration="1246000" />
       <workItem from="1683100360013" duration="621000" />
+      <workItem from="1683853449174" duration="37000" />
+      <workItem from="1683853599690" duration="49000" />
+      <workItem from="1683853737263" duration="22000" />
     </task>
     <servers />
   </component>
