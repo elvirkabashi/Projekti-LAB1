@@ -13,7 +13,7 @@ public class Checkout {
     public Checkout(String userEmail, String checkoutDate, String returnDate,Long bookId){
         this.userEmail = userEmail;
         this.checkoutDate = checkoutDate;
-        this.reurnDate = returnDate;
+        this.returnDate  = returnDate;
         this.bookId = bookId;
     }
 
@@ -29,7 +29,7 @@ public class Checkout {
     private String checkoutDate;
 
     @Column(name = "return_date")
-    private String reurnDate;
+    private String returnDate;
 
     @Column(name = "book_id")
     private Long bookId;
