@@ -14,6 +14,10 @@ export const Navbar = () => {
   const handleLogout = async () => oktaAuth.signOut();
 
   console.log(authState);
+  
+  //const { isAuthenticated, idToken } = authState;
+  //const userName = isAuthenticated && idToken.claims.name;
+  
 
     return(
         <nav className='navbar navbar-expand-lg navbar-dark main-color py-3'>
@@ -34,16 +38,30 @@ export const Navbar = () => {
               <li className='nav-item'>
                 <NavLink to="/search" className='nav-link'>Search Books</NavLink>
               </li>
+              {authState.isAuthenticated &&
+              <li className='nav-item'>
+                <NavLink className='nav-link' to="/shelf">Shelf</NavLink>
+              </li>
+              }
             </ul>
             <ul className='navbar-nav ms-auto'>
             {!authState.isAuthenticated ? 
               <li className='nav-item m-1'>
                 <Link type='button' className='btn btn-outline-light' to="/login">Sign in</Link>
               </li>
-              :
-              <li>
-                <button className='btn btn-outline-light' onClick={handleLogout}>Logout</button>
+              :(
+                <li className='nav-item d-flex align-items-center'>
+                <span className='me-3 text-light'>
+                  {/*userName*/}
+                </span>
+                <button
+                  className='btn btn-outline-light'
+                  onClick={handleLogout}
+                >
+                  Logout
+                </button>
               </li>
+              )
             }
             </ul>
           </div>
