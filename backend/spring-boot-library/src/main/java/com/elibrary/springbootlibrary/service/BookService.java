@@ -2,8 +2,10 @@ package com.elibrary.springbootlibrary.service;
 
 import com.elibrary.springbootlibrary.dao.BookRepository;
 import com.elibrary.springbootlibrary.dao.CheckoutRepository;
+import com.elibrary.springbootlibrary.dao.HistoryRepository;
 import com.elibrary.springbootlibrary.entity.Book;
 import com.elibrary.springbootlibrary.entity.Checkout;
+import com.elibrary.springbootlibrary.entity.History;
 import com.elibrary.springbootlibrary.responsemodels.ShelfCurrentLoansResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,9 +26,12 @@ public class BookService {
     private BookRepository bookRepository;
     private CheckoutRepository checkoutRepository;
 
-    public BookService(BookRepository bookRepository, CheckoutRepository checkoutRepository){
+    private HistoryRepository historyRepository;
+
+    public BookService(BookRepository bookRepository, CheckoutRepository checkoutRepository,HistoryRepository historyRepository){
         this.bookRepository=bookRepository;
         this.checkoutRepository=checkoutRepository;
+        this.historyRepository=historyRepository;
     }
 
 
@@ -110,7 +115,7 @@ public class BookService {
 
         Checkout validateCheckout = checkoutRepository.findByUserEmailAndBookId(userEmail,bookId);
 
-        if(book.isPresent() || validateCheckout == null){
+        if(!book.isPresent() || validateCheckout == null){
             throw new Exception("Book does not exist or not checked our by user");
         }
 
@@ -118,6 +123,18 @@ public class BookService {
 
         bookRepository.save(book.get());
         checkoutRepository.deleteById(validateCheckout.getId());
+
+         History history = new History(
+                 userEmail,
+                 validateCheckout.getCheckoutDate(),
+                 LocalDate.now().toString(),
+                 book.get().getTitle(),
+                 book.get().getAuthor(),
+                 book.get().getDescription(),
+                 book.get().getImg()
+         );
+
+         historyRepository.save(history);
      }
 
 
@@ -138,4 +155,6 @@ public class BookService {
             checkoutRepository.save(validateCheckout);
         }
      }
+
+
 }

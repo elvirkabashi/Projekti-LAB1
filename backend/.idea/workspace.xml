@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4a3c9cb-3146-414b-8dcc-c5cc70f67b35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/layouts/BookCheckoutPage/BookCheckoutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/layouts/BookCheckoutPage/BookCheckoutPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/layouts/BookCheckoutPage/CheckoutAndReviewBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/layouts/BookCheckoutPage/CheckoutAndReviewBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/layouts/NavbarAndFooter/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/layouts/NavbarAndFooter/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/layouts/SearchBooksPage/components/SearchBooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/layouts/SearchBooksPage/components/SearchBooks.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,7 @@
       <recent name="com.elibrary.springbootlibrary.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpringBootLibraryApplication">
+  <component name="RunManager" selected="Spring Boot.SpringBootLibraryApplication">
     <configuration name="SpringBootLibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elibrary.springbootlibrary.SpringBootLibraryApplication" />
       <module name="spring-boot-library" />
@@ -128,6 +124,8 @@
       <workItem from="1684015325468" duration="29000" />
       <workItem from="1684018654951" duration="1228000" />
       <workItem from="1684165578376" duration="18067000" />
+      <workItem from="1684367372437" duration="240000" />
+      <workItem from="1684367737785" duration="648000" />
     </task>
     <servers />
   </component>
