@@ -5,6 +5,7 @@
 .header {
     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./Images/PublicImages/image-2.jpg");
     opacity: var(--mainOpacity);
+
     height: 25em !important;
 }
 
@@ -18,9 +19,10 @@
   }
 
 .main-color {
-background-color: #093447 ;
+background-color: hwb(9 11% 31%) ;
 }
 
+/*#093447*/
 .col-image-left {
     background-image: url("./Images/BooksImages/book4.jpg");
     height: 25em !important;
