@@ -1,3 +1,4 @@
+
 package com.elibrary.springbootlibrary.config;
 
 import com.okta.spring.boot.oauth.Okta;
@@ -7,6 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.accept.ContentNegotiationStrategy;
 import org.springframework.web.accept.HeaderContentNegotiationStrategy;
+
 
 @Configuration
 public class SecurityConfiguration {
@@ -20,7 +22,9 @@ public class SecurityConfiguration {
         // Protect endpoints at /api/<type>/secure
         http.authorizeRequests(configurer ->
                         configurer
-                                .antMatchers("/api/books/secure/**","/api/reviews/secure/**")
+                                .antMatchers("/api/books/secure/**",
+                                        "/api/reviews/secure/**",
+                                        "/api/messages/secure/**")
                                 .authenticated())
                 .oauth2ResourceServer()
                 .jwt();
@@ -39,6 +43,8 @@ public class SecurityConfiguration {
     }
 
 }
+
+
 
 
 
