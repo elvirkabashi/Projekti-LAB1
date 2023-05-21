@@ -87,7 +87,7 @@
       <recent name="com.elibrary.springbootlibrary.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootLibraryApplication">
+  <component name="RunManager" selected="Application.SpringBootLibraryApplication">
     <configuration name="SpringBootLibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elibrary.springbootlibrary.SpringBootLibraryApplication" />
       <module name="spring-boot-library" />
