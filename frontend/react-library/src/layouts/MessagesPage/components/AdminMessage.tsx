@@ -1,8 +1,8 @@
 import { useOktaAuth } from "@okta/okta-react";
 import { useEffect,useState } from "react";
-import MessagesModel from "../../../models/MessagesModel";
+import MessageModel from "../../../models/MessageModel";
 
-export const AdminMessage: React.FC<{message: MessagesModel, submitResponseToQuestion : any}> = (props, key) => {
+export const AdminMessage: React.FC<{message: MessageModel, submitResponseToQuestion : any}> = (props, key) => {
    
     const [displayWarning, setDisplayWarning] = useState(false);
     const [response, setResponse] = useState('');

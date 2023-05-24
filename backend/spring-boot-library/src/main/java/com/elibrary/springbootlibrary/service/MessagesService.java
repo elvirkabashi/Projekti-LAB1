@@ -1,8 +1,8 @@
 
 package com.elibrary.springbootlibrary.service;
 
-import com.elibrary.springbootlibrary.dao.MessagesRepository;
-import com.elibrary.springbootlibrary.entity.Messages;
+import com.elibrary.springbootlibrary.dao.MessageRepository;
+import com.elibrary.springbootlibrary.entity.Message;
 import com.elibrary.springbootlibrary.requestmodels.AdminQuestionRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,22 +14,22 @@ import java.util.Optional;
 @Transactional
 public class MessagesService {
 
-    private MessagesRepository messagesRepository;
+    private MessageRepository messagesRepository;
 
     @Autowired
-    public MessagesService(MessagesRepository messagesRepository) {
+    public MessagesService(MessageRepository messagesRepository) {
         this.messagesRepository = messagesRepository;
     }
 
-    public void postMessage(Messages messageRequest, String userEmail) {
-        Messages message = new Messages(messageRequest.getTitle(), messageRequest.getQuestion());
+    public void postMessage(Message messageRequest, String userEmail) {
+        Message message = new Message(messageRequest.getTitle(), messageRequest.getQuestion());
         message.setUserEmail(userEmail);
         messagesRepository.save(message);
 
     }
 
     public void  putMessage(AdminQuestionRequest adminQuestionRequest, String userEmail) throws Exception{
-        Optional<Messages> message = messagesRepository.findById(adminQuestionRequest.getId());
+        Optional<Message> message = messagesRepository.findById(adminQuestionRequest.getId());
         if(!message.isPresent()){
             throw new Exception("Message not found");
         }

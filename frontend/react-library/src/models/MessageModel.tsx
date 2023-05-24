@@ -1,4 +1,4 @@
-class MessagesModel{
+class MessageModel{
     title: string;
     question: string;
     id?: number;
@@ -14,4 +14,4 @@ class MessagesModel{
 
 
 }
-export default MessagesModel;
+export default MessageModel;

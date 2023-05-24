@@ -2,7 +2,7 @@ import { useOktaAuth } from "@okta/okta-react";
 import { useEffect,useState } from 'react';
 import { SpinnerLoading } from "../../Utils/SpinnerLoading";
 import { Pagination } from "../../Utils/Pagination";
-import MessagesModel from "../../../models/MessagesModel";
+import MessageModel from "../../../models/MessageModel";
 import { AdminMessage } from "../../MessagesPage/components/AdminMessage";
 import AdminMessageRequest from "../../../models/AdminMessageRequest";
 export const AdminMessages = () => {
@@ -14,7 +14,7 @@ export const AdminMessages = () => {
     const[httpError,setHttpError] = useState(null);
 
     //Messages endpoint State
-    const [messages,setMessages]=useState<MessagesModel[]>([]);
+    const [messages,setMessages]=useState<MessageModel[]>([]);
     const[messagesPerPage] = useState(5);
 
     //Pagination
@@ -23,7 +23,6 @@ export const AdminMessages = () => {
 
 
     //Recall useEffect
-
     const [btnSubmit, setBtnSubmit] = useState(false);
 
 
@@ -31,7 +30,7 @@ export const AdminMessages = () => {
     useEffect (()=> {
         const fetchUserMessages = async () => {
           if(authState && authState.isAuthenticated){
-            const url = `http://localhost:8080/api/messageses/search/findByClosed/?closed=false&page=${currentPage - 1}&size=${messagesPerPage}`;
+            const url = `http://localhost:8080/api/messages/search/findByClosed/?closed=false&page=${currentPage - 1}&size=${messagesPerPage}`;
             const requestOptions = {
                 method: 'GET',
                 headers:{
@@ -101,10 +100,9 @@ export const AdminMessages = () => {
             {messages.length > 0 ?
             <>
                 <h5>Pending Q/A:</h5>
-                {messages.map(message => {
-                     <AdminMessage message={message} key={message.id} submitResponseToQuestion={submitResponseToQuestion}
-                    />                   
-                })}
+                {messages.map(message => (
+                     <AdminMessage message={message} key={message.id} submitResponseToQuestion={submitResponseToQuestion}/>                   
+                ))}
             
             </>
             :

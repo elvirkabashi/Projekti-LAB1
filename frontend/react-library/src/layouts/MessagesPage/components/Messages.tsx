@@ -1,6 +1,6 @@
 import { useEffect, useState} from 'react';
 import { useOktaAuth } from '@okta/okta-react';
-import MessagesModel from '../../../models/MessagesModel';
+import MessageModel from '../../../models/MessageModel';
 import { SpinnerLoading } from '../../Utils/SpinnerLoading';
 import { Pagination } from '../../Utils/Pagination';
 
@@ -12,7 +12,7 @@ export const Messages = () => {
     const [htttpError,setHttpError] = useState(null);
 
     //Messages
-    const [messages,setMessages] = useState<MessagesModel[]>([]);
+    const [messages,setMessages] = useState<MessageModel[]>([]);
 
     //Pagination
     const [messagesPerPage] = useState(5);
@@ -81,7 +81,7 @@ export const Messages = () => {
             {messages.map(message => (
                 <div key={message.id}>
                     <div className='card mt-2 shadow p-3 bg-body rounded'>
-                    <h5>Case #{message.id} : {message.title}</h5>
+                    <h5>Case#{message.id} : {message.title}</h5>
                     <h6>{message.userEmail}</h6>
                     <p>{message.question}</p>
                     <hr />
@@ -93,7 +93,7 @@ export const Messages = () => {
                         <p>{message.response}</p>
                         </>
                         :
-                        <p><i>Pending response from administration.Please be patient</i></p>
+                        <p><i>Pending response from administration.Please be patient!</i></p>
                         }
                     </div>
                 </div>

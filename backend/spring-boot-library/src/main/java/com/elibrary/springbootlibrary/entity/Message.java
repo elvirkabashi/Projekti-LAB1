@@ -13,11 +13,11 @@ import javax.persistence.*;
 @Entity
 @Table(name = "messages")
 @Data
-public class Messages {
+public class Message {
 
-    public Messages(){}
+    public Message(){}
 
-    public Messages(String title, String question){
+    public Message(String title, String question){
         this.title=title;
         this.question=question;
     }
