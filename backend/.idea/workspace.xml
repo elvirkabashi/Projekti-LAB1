@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a4a3c9cb-3146-414b-8dcc-c5cc70f67b35" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/config/MyDataRestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/config/MyDataRestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/MessagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/MessagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/ReviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/layouts/ManageLibraryPage/ManageLibraryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/layouts/ManageLibraryPage/ManageLibraryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/react-library/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/lib/oktaConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/lib/oktaConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +67,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -145,6 +151,9 @@
       <workItem from="1684367737785" duration="648000" />
       <workItem from="1684522185251" duration="370000" />
       <workItem from="1684522634376" duration="5173000" />
+      <workItem from="1685109995019" duration="2220000" />
+      <workItem from="1685179851335" duration="901000" />
+      <workItem from="1685181005116" duration="1948000" />
     </task>
     <servers />
   </component>
