@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4a3c9cb-3146-414b-8dcc-c5cc70f67b35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/CheckoutRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/CheckoutRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

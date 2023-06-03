@@ -14,6 +14,7 @@ const[currentPage,setCurrentPage]=useState(1);
 const[booksPerPage]=useState(5);
 const[totalAmountOfBooks,setTotalAmountOfBooks]=useState(0);
 const[totalPages,setTotalPages]=useState(0);
+const [bookDelete, setBookDelete] = useState(false);
 useEffect(() => {
     const fetchBooks = async () =>{
        const baseUrl:string = `${process.env.REACT_APP_API}/books?page=${currentPage-1}&size=${booksPerPage}`;
@@ -61,7 +62,8 @@ useEffect(() => {
     })
     
 
-}, [booksPerPage, currentPage]);
+}, [booksPerPage, currentPage,bookDelete]);
+
 const indexOfLastBook:number=currentPage * booksPerPage;
 const indexOfFirstBook:number=indexOfLastBook-booksPerPage;
 let lastItem=booksPerPage* currentPage <= totalAmountOfBooks?
@@ -70,6 +72,8 @@ booksPerPage* currentPage:totalAmountOfBooks
 
 
 const paginate=(pageNumber:number)=>setCurrentPage(pageNumber);
+
+const deleteBook = () => setBookDelete(!bookDelete);
 if(isLoading){
     return(
         <SpinnerLoading/>
@@ -95,7 +99,7 @@ if(httpError){
                 {indexOfFirstBook+1}to{lastItem}of{totalAmountOfBooks}items:
             </p>
             {books.map(book=>(
-                <ChangeQuantityOfBook book={book} key={book.id}/>
+                <ChangeQuantityOfBook book={book} key={book.id} deleteBook={deleteBook}/>
             ))}
 
             

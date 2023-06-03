@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
+import { useOktaAuth } from "@okta/okta-react";
 import BookModel from "../../../models/BookModel";
 
-export const ChangeQuantityOfBook:React.FC<{book:BookModel}>=(props,key)=>{
+export const ChangeQuantityOfBook:React.FC<{book:BookModel, deleteBook:any }>=(props,key)=>{
 
+    const {authState} = useOktaAuth();
     const [quantity,setQuantity]=useState<number>(0);
     const[remaining,setRemaining]=useState<number>(0);
+    
 
     useEffect(()=>{
         const fetchBookInState=()=>{
@@ -13,6 +16,22 @@ export const ChangeQuantityOfBook:React.FC<{book:BookModel}>=(props,key)=>{
         };
         fetchBookInState();
     },[]);
+
+    async function deleteBook() {
+        const url = `https://localhost:8443/api/admin/secure/delete/book/?bookId=${props.book?.id}`;
+        const requestOptions ={
+            method: 'DELETE',
+            headers: {
+                Authorization: `Bearer ${authState?.accessToken?.accessToken}`,
+                'Content-Type': 'application/json'
+            }
+        };
+        const updateResponse = await fetch(url, requestOptions);
+        if(!updateResponse.ok){
+            throw new Error('Something went wrong!');
+        }
+        props.deleteBook();
+    }
 
     return(
         <div className="card mt-3 shadow p-3 mb-3 bg-body rounded">
@@ -57,7 +76,7 @@ export const ChangeQuantityOfBook:React.FC<{book:BookModel}>=(props,key)=>{
                 </div>
                 < div className="mt-3 col-md-1">
                     <div className="d-flex justify-content-start">
-                        <button className="m-1 btn btn-md btn-danger">Delete</button>
+                        <button className="m-1 btn btn-md btn-danger" onClick={deleteBook}>Delete</button>
                     </div>
                 </div>
                 <button className="m1 btn btn-md main-color text-white">Add Quantity</button>
