@@ -7,10 +7,10 @@
     <list default="true" id="a4a3c9cb-3146-414b-8dcc-c5cc70f67b35" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/CheckoutRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/CheckoutRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/dao/ReviewRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/layouts/ManageLibraryPage/ManageLibraryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/layouts/ManageLibraryPage/ManageLibraryPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2P69hMCqYgfr70Qa9iSjZjSfqIN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -59,8 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/Projekti-LAB1/backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/Projekti-LAB1-1/backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,7 +78,7 @@
       <recent name="com.elibrary.springbootlibrary.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootLibraryApplication">
+  <component name="RunManager" selected="Application.SpringBootLibraryApplication">
     <configuration name="SpringBootLibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elibrary.springbootlibrary.SpringBootLibraryApplication" />
       <module name="spring-boot-library" />
@@ -152,9 +151,6 @@
       <workItem from="1685109995019" duration="2220000" />
       <workItem from="1685179851335" duration="901000" />
       <workItem from="1685181005116" duration="1948000" />
-      <workItem from="1685638788040" duration="423000" />
-      <workItem from="1685689085789" duration="194000" />
-      <workItem from="1685737514262" duration="2815000" />
     </task>
     <servers />
   </component>
