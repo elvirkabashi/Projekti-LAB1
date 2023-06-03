@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4a3c9cb-3146-414b-8dcc-c5cc70f67b35" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/config/MyDataRestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/config/MyDataRestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/MessagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/MessagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/java/com/elibrary/springbootlibrary/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-library/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/react-library/src/lib/oktaConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/react-library/src/lib/oktaConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +73,7 @@
       <recent name="com.elibrary.springbootlibrary.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootLibraryApplication">
+  <component name="RunManager" selected="Application.SpringBootLibraryApplication">
     <configuration name="SpringBootLibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elibrary.springbootlibrary.SpringBootLibraryApplication" />
       <module name="spring-boot-library" />
