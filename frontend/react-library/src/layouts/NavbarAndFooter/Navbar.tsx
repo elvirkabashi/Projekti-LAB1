@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useOktaAuth } from '@okta/okta-react';
 import { SpinnerLoading } from '../Utils/SpinnerLoading';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+
 
 export const Navbar = () => {
 
@@ -15,8 +18,8 @@ export const Navbar = () => {
 
   console.log(authState);
   
-  //const { isAuthenticated, idToken } = authState;
-  //const userName = isAuthenticated && idToken.claims.name;
+  const { isAuthenticated, idToken } = authState;
+  const userName = isAuthenticated && idToken?.claims?.name;
   
 
     return(
@@ -38,7 +41,7 @@ export const Navbar = () => {
               <li className='nav-item'>
                 <NavLink to="/search" className='nav-link'>Search Books</NavLink>
               </li>
-              {authState.isAuthenticated &&
+              {authState.isAuthenticated && authState.accessToken?.claims?.userType !== 'admin' &&
               <li className='nav-item'>
                 <NavLink className='nav-link' to="/shelf">Shelf</NavLink>
               </li>
@@ -61,15 +64,15 @@ export const Navbar = () => {
               </li>
               :(
                 <li className='nav-item d-flex align-items-center'>
-                <span className='me-3 text-light'>
-                  {/*userName*/}
-                </span>
-                <button
-                  className='btn btn-outline-light'
-                  onClick={handleLogout}
-                >
-                  Logout
-                </button>
+              <span className='me-3 text-light dropdown' style={{cursor:'pointer'}}>
+              <FontAwesomeIcon icon={faUser} className='me-2'/>
+                {userName}
+                <div className='dropdown-menu'>
+                  <div className='dropdown-item' onClick={handleLogout}>
+                    Logout
+                  </div>
+                </div>
+              </span>
               </li>
               )
             }
